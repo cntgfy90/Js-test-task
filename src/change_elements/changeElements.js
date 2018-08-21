@@ -21,7 +21,7 @@ console.log(changeElements([10,20,30])) // output ---> [20,10,30]
 // Implementation with ES6 syntax
 function changedElementsES6(list) {
   let arrayFrom2Index;
-  if (Array.isArray(list)) {
+  if (Array.isArray(list) && list.length > 1) {
     return [
       list[1],
       list[0],
